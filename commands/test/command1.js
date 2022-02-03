@@ -5,6 +5,7 @@ const data = require(`${process.cwd()}/properties.json`)
 module.exports = {
     name: "command1",
     description: "Just a test, you can set a discription",
+    userPermissions: ["ADMINISTRATOR"],
     type: 'CHAT_INPUT',
     /**
      *
