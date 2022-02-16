@@ -1,5 +1,5 @@
 const { setTimeout } = require("discord.js")
 
-export async function sleep(s) {
+exports.sleep = async => (seconds) => {
     return new Promise(resolve => setTimeout(resolve, s * 1000));
 }
