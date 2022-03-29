@@ -28,6 +28,7 @@ This will install all the dependecies form package.json
 
 ### Step 3: `copy your bot token from the discord dev portal to the .env file`
 
+Rename the .env.example file to just .env.
 Now copy your bot token from the discord dev portal to the .env file
 
 ### Step 4 `add all the intents to your server`
