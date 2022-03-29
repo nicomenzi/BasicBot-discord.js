@@ -41,7 +41,7 @@ On the Discord Developer Portal in the Bot section go down to Privileged Gateway
 
 On the URL Generator Section give the bot the scope of bot AND applications.commands and on Bot permissions Administrator
 
-> > The Scope part is important else your bot is not gonna start.
+> The Scope part is important else your bot is not gonna start.
 
 ### Step 6: `copy your server token into /handlers/commands.js:29`
 
