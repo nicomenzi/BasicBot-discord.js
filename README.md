@@ -47,6 +47,11 @@ On the URL Generator Section give the bot the scope of bot AND applications.comm
 
 #### Explanation: [Here is how](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-)
 
-### Step 7: `Now run nodemon or node index.js`
+### Step 7: `Now npm run dev (development) or npm run start (production)`
 
 And see if everything is working fine.
+You schould see a login message in the terminal and the bot should be online.
+
+else...
+- ... check if the token provided by you is the right one
+- ... check if you have a working code from this repo
