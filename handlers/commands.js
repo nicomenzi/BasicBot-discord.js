@@ -30,8 +30,11 @@ module.exports = async (client) => {
         const guild = client.guilds.cache.get(data.guildId)
         await guild.commands.set(arrayOfSlashCommands)
 
+        // -- Register for all the guilds the bot is in (can take up to a hour to let them work.)
+        // await client.application.commands.set(arrayOfSlashCommands);
 
-        // In a older version of the bot, you can register permissions for a guild
+
+        // -- In a older version of the bot, you can register permissions for a guild
         // 
         // 
         // .then((cmd) => {
