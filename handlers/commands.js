@@ -3,6 +3,7 @@ const { promisify } = require("util")
 const globPromise = promisify(glob)
 
 const { Client } = require("discord.js")
+const data = require(`${process.cwd()}/properties.json`)
 
 /**
  * 
@@ -26,41 +27,47 @@ module.exports = async (client) => {
     });
     client.on("ready", async () => {
         // -- Register for a single guild
-        const guild = client.guilds.cache.get("REPLACEWITHGUILDID")
-        await guild.commands.set(arrayOfSlashCommands).then((cmd) => {
-            const getRoles = (commandName) => {
-                const permissions = arrayOfSlashCommands.find(x => x.name === commandName).userPermissions;
+        const guild = client.guilds.cache.get(data.guildId)
+        await guild.commands.set(arrayOfSlashCommands)
 
-                if (!permissions) return null;
 
-                return guild.roles.cache.filter(
-                    (x) => x.permissions.has(permissions) && !x.managed
-                );
-            };
+        // In a older version of the bot, you can register permissions for a guild
+        // 
+        // 
+        // .then((cmd) => {
+        //     const getRoles = (commandName) => {
+        //         const permissions = arrayOfSlashCommands.find(x => x.name === commandName).userPermissions;
 
-            const fullPermissions = cmd.reduce((accumulator, x) => {
-                const roles = getRoles(x.name)
-                if (!roles) return accumulator;
+        //         if (!permissions) return null;
 
-                const permissions = roles.reduce((a, v) => {
-                    return [
-                        ...a,
-                        {
-                            id: v.id,
-                            type: 'ROLE',
-                            permission: true
-                        }
-                    ];
-                }, []);
-                return [
-                    ...accumulator,
-                    {
-                        id: x.id,
-                        permissions,
-                    }
-                ]
-            }, [])
-            guild.commands.permissions.set({ fullPermissions })
-        });
+        //         return guild.roles.cache.filter(
+        //             (x) => x.permissions.has(permissions) && !x.managed
+        //         );
+        //     };
+
+        //     const fullPermissions = cmd.reduce((accumulator, x) => {
+        //         const roles = getRoles(x.name)
+        //         if (!roles) return accumulator;
+
+        //         const permissions = roles.reduce((a, v) => {
+        //             return [
+        //                 ...a,
+        //                 {
+        //                     id: v.id,
+        //                     type: 'ROLE',
+        //                     permission: true
+        //                 }
+        //             ];
+        //         }, []);
+        //         return [
+        //             ...accumulator,
+        //             {
+        //                 id: x.id,
+        //                 permissions,
+        //             }
+        //         ]
+        //     }, [])
+        //     guild.commands.permissions.set({ fullPermissions })
+        // });
     });
 }
