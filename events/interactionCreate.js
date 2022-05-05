@@ -4,7 +4,7 @@ const client = require('../index.js')
 client.on('interactionCreate', async interaction => {
 	// DONT CHANGE THIS CODE
 	// It calls the right SlashCommand run function.
-	if (interaction.isCommand) {
+	if (interaction.isCommand()) {
 		// await interaction.deferReply({ ephemeral: false }).catch(() => { });
 
 		const cmd = client.slashCommands.get(interaction.commandName);
