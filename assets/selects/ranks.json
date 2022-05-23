@@ -1,0 +1,66 @@
+{
+    "message": "Select your VALORANT rank. (Please be fair and select the right one)",
+    "customId": "ranks",
+    "placeholder": "Iron, Bronze, Silver, Gold, ... , Radiant",
+    "maxValues": 1,
+    "minValues": 1,
+    "disabled": false,
+    "options": [
+        {
+            "value": "978402514342912050",
+            "label": "Iron",
+            "description": "Oh, a beginner",
+            "emoji": "",
+            "default": false
+        },
+        {
+            "value": "978402611944361994",
+            "label": "Bronze",
+            "description": "Not your first shooter i guess",
+            "emoji": "",
+            "default": false
+        },
+        {
+            "value": "978402812964790334",
+            "label": "Silver",
+            "description": "A little bit of experience",
+            "emoji": "",
+            "default": false
+        },
+        {
+            "value": "978402738075471912",
+            "label": "Gold",
+            "description": "You played a few seasons",
+            "emoji": "",
+            "default": false
+        },
+        {
+            "value": "978402975624093756",
+            "label": "Platinum",
+            "description": "A lot of experience",
+            "emoji": "",
+            "default": false
+        },
+        {
+            "value": "978403308450512927",
+            "label": "Diamond",
+            "description": "The top is near",
+            "emoji": "",
+            "default": false
+        },
+        {
+            "value": "978403139071930418",
+            "label": "Immortal",
+            "description": "Wow, you made it to the top",
+            "emoji": "",
+            "default": false
+        },
+        {
+            "value": "978403452331917352",
+            "label": "Radiant",
+            "description": "You are a real Radiant",
+            "emoji": "",
+            "default": false
+        }
+    ]
+}

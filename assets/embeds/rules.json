@@ -1,0 +1,71 @@
+{
+    "title": "-+- 📜 RULES 📜 -+-",
+    "description": "In the following text the rules of the server are written down.\n**If you interact with the Discord server (write, talk, read, etc.), you agree to the rules!**",
+    "color": "#e6c49c",
+    "fields": [
+      {
+        "name": "- §01 -",
+        "value": "Abide by the Discord's  [Terms of Service](https://discord.com/terms) and [Community Guidelines](https://discord.com/guidelines). Not following to do so may result in a ban."
+      },
+      {
+        "name": "- §02 -",
+        "value": "Treat everyone how you would like to be treated. Do not make rude comments to other users and starting unnecessary fights will not be tolerated here.",
+        "inline": false
+      },
+      {
+        "name": "- §03 -",
+        "value": "No spamming in any ways.",
+        "inline": false
+      },
+      {
+        "name": "- §04 -",
+        "value": "Avoiding bans by using 2. accounts will not be tolerated.",
+        "inline": false
+      },
+      {
+        "name": "- §05 -",
+        "value": "Instructions from the server team must be followed.",
+        "inline": false
+      },
+      {
+        "name": "- §06 -",
+        "value": "Do not advertise unless this has been agreed with the owners.",
+        "inline": false
+      },
+      {
+        "name": "- §07 -",
+        "value": "Do not trade through this server. (E.g. Minecraft accounts, etc.)",
+        "inline": false
+      },
+      {
+        "name": "- §08 -",
+        "value": "Everyone has the opportunity to give themselves a nickname, but it must not be the same as or similar to the name of another member and must not be sexist, racist, insulting or similar for someone else. The same goes for the profile pictures.",
+        "inline": false
+      },
+      {
+        "name": "- §09 -",
+        "value": "The rules can be changed at any time. (will be communicated in #news)",
+        "inline": false
+      },
+      {
+        "name": "- §10 -",
+        "value": "You are responsible for what happens on your account, so if, for example, your cat insults someone with your cell phone, you are responsible for it.",
+        "inline": false
+      },
+      {
+        "name": "- §11 -",
+        "value": "Ignorance is no excuse! Anyone who joins this server automatically has to follow the rules.",
+        "inline": false
+      },
+      {
+        "name": "\u200b",
+        "value": "---------------------------",
+        "inline": false
+      },
+      {
+        "name": "⛔ - Breaking the rules - ⛔",
+        "value": "Violations can result in a warning, timeout or ban.\n The server owners and moderators have the right to enforce these rules.",
+        "inline": false
+      }
+    ]
+  }

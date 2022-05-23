@@ -28,4 +28,31 @@ client.on('interactionCreate', async interaction => {
 
 
 	// --> Here you can go on.
+
+	if (interaction.isSelectMenu()) {
+		try {
+			switch (interaction.customId) {
+				case "ranks":
+					interaction.component.options.map(role => {
+						let removerole = interaction.guild.roles.cache.get(role.value);
+						// remove role from member
+						interaction.member.roles.remove(removerole)
+					})
+					interaction.values.map(option => {
+						let addrole = interaction.guild.roles.cache.get(option);
+						// add role to member
+						interaction.member.roles.add(addrole);
+					})
+					interaction.reply({ content: "Roles updated", ephemeral: true });
+					break
+
+				default:
+					interaction.reply({ content: "I cant find running code for this interaction.", ephemeral: true });
+					logger.info("I dont know what to do. Something missing?");
+			}
+		} catch (e) {
+			interaction.reply({ content: "An error has occured", ephemeral: true });
+			logger.error(e);
+		}
+	}
 });

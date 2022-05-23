@@ -1,0 +1,11 @@
+**Welcome <@&978368306610331658> on the Official Kahlifar Esport Server**
+I wanna explain how this is working out here so please read the following:
+
+`                     == SERVER INFO ==                     `
+
+This server is to be used for all things Kahlifar Esport and VALORANT related. If you wanna find some mates, wanna find some helpful tips or just watching us playing tournaments, this is the place for you.
+
+**Invite Friends**
+We have disabled the permissions to create invites.
+Please use the `/discord` command from the <@978393419447676928> to get the global invite link provided by us.
+Or just use this one (<http://esport.kahlifar.de/>)
