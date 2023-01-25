@@ -1,30 +1,23 @@
 {
-  "name": "countingsystem",
+  "name": "basicbot-discord-v14",
   "version": "1.0.0",
-  "description": "Personalized Countig Bot to stop Spamming or wrong numbers",
+  "description": "discordc bot template for v14",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fynnyx/CountingSystem.git"
+    "url": "git+https://github.com/Fynnyx/BasicBot-discord.js.git"
   },
   "author": "Fynnyx",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Fynnyx/CountingSystem/issues"
+    "url": "https://github.com/Fynnyx/BasicBot-discord.js/issues"
   },
-  "homepage": "https://github.com/Fynnyx/CountingSystem#readme",
+  "homepage": "https://github.com/Fynnyx/BasicBot-discord.js#readme",
   "dependencies": {
-    "@discordjs/builders": "^0.12.0",
-    "@discordjs/rest": "^0.3.0",
-    "discord-api-types": "^0.26.1",
-    "discord.js": "^13.6.0",
-    "dotenv": "^15.0.0",
-    "glob": "^7.2.0",
-    "nodemon": "^2.0.16",
-    "winston": "^3.7.2"
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
   }
 }
