@@ -16,7 +16,7 @@ This will install all the dependecies form package.json
 "repository": {<br>
 "type": "git",<br>
 "url": "your repo link if you have one"<br>
-"author": "Aasjiel",<br>
+"author": "Your username",<br>
 "license": "MIT",<br>
 "url": "your repo link if you have one/issues"<br>
 "homepage": "your repo link if you have one#readme",<br>
@@ -33,19 +33,17 @@ Now copy your bot token from the discord dev portal to the .env file
 
 ### Step 4 `add all the intents to your server`
 
-On the Discord Developer Portal in the Bot section go down to Privileged Gateway Intents and activate all 3 of them. (Presebce intent, Server members intent, Message content intent)
+On the Discord Developer Portal in the Bot section go down to Privileged Gateway Intents and activate all 3 of them. (Presence intent, Server members intent, Message content intent)
 
 ### Step 5: `invite your bot to your server`
 
 #### Explanation: [Here is how](https://discordpy.readthedocs.io/en/stable/discord.html)
 
-On the URL Generator Section give the bot the scope of bot AND applications.commands and on Bot permissions Administrator
+On the URL Generator Section give the bot the scope of bot AND applications.commands and on Bot permissions Administrator (Administrator is just adviced for testing purposes. While in production you should give the bot only the permissions it needs.)
 
 > The Scope part is important else your bot is not gonna start.
 
-### Step 6: `copy your server token into /handlers/commands.js:29`
-
-#### Explanation: [Here is how](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-)
+### Step 6: `copy your user(you as a developer) id into the properties.json file`
 
 ### Step 7: `Now npm run dev (development) or npm run start (production)`
 
