@@ -1,23 +1,7 @@
 {
     "developer": "451776092785737728",
     "guildId": "978366979914235905",
-    "commands": {
-        "discord": {
-            "links": [
-                "http://esport.kahlifar.de"
-            ]
-        }
-    },
+    "commands": {},
     "helpers": {},
-    "events": {
-        "join": {
-            "channel": "978366980623056949",
-            "roles": [
-                "978368306610331658"
-            ],
-            "botRoles": [
-                "978381145416818779"
-            ]
-        }
-    }
+    "events": {}
 }
